@@ -1,1 +1,22 @@
 // Mixins in here
+
+.signup-btn {
+    background-color: @button-blue;
+    width: 85%;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.btn-font {
+    text-align: center;
+    color: @white;
+    font-size: 2rem;
+}
+
+
+.content-pick {
+    .btn {
+        .signup-btn();
+        .btn-font();
+    }
+}
